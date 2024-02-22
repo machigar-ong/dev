@@ -1,0 +1,9 @@
+name: Test Actions
+on: push
+jobs:
+  build-node:
+    name: build node
+    runs-on: windows-latest
+    steps:
+      - run: node --version
+      - run: npm --version
